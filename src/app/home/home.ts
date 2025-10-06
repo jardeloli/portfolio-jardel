@@ -7,7 +7,7 @@ import { ProfileServise } from '../services/profile';
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
-export class Home {
+export class HomeComponent {
 
   constructor(private profileService: ProfileServise){}
 

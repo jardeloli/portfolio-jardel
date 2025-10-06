@@ -7,7 +7,7 @@ import { ProfileServise } from '../services/profile';
   templateUrl: './footer.html',
   styleUrl: './footer.css'
 })
-export class Footer {
+export class FooterComponent {
 
   constructor(private profileService: ProfileServise){}
 

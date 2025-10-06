@@ -9,6 +9,7 @@
 :root {
     font-size: 125%;
     font-family: 'Playfair Display', sans-serif;
+   
 
     --font-size-1: 2.25rem;
     --font-size-2: 1.75rem;
@@ -19,6 +20,7 @@
     --color-blue-1: #1c95f9;
     --color-blue-2: #296f97;
     --color-blue-3: #153d50;
+    --color-blue-4: #2668866e;
 
     --color-pink-1: #f42771;
 

@@ -37,3 +37,5 @@ export class MenuService {
   }
 
 }
+export { Menu };
+
