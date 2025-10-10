@@ -64,3 +64,60 @@
 .banner .box .buttons i{
     margin-right: 5px;
 }
+
+/*box about*/
+
+.about .box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.about  .img {
+    flex: 1;
+    margin: 10px auto 20px;
+    
+}
+
+.about .box .img img{
+    width: 200px;
+    border-radius: 8%;
+   
+}
+
+.about .text{
+    flex: 2
+}
+
+.about h2{
+    padding: 0 15px;
+}
+
+.about h3{
+    color: var(--color-blue-2);
+    margin-top: 15px; 
+    padding: 0 15px;
+}
+
+.about p {
+    margin: 15px 0;
+    text-align: justify;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px){
+    .about .box{
+        flex-direction: row;
+        padding: 80px;
+    }
+
+    .about .box .img img{
+        width: 100%;
+        
+    }
+
+    .about  .img {
+        margin: 10px 15px 20px;
+    
+    }
+}
