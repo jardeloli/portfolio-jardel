@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProfileServise } from '../services/profile';
+import { Profile, ProfileServise } from '../services/profile';
 
 @Component({
   selector: 'app-footer',
@@ -9,6 +9,14 @@ import { ProfileServise } from '../services/profile';
 })
 export class FooterComponent {
 
-  constructor(private profileService: ProfileServise){}
+  constructor(private profileService: ProfileServise) { }
 
+  profile?: Profile;
+
+  date: Date = new Date();
+
+  ngOnInit() {
+    this.profile = this.profileService.getProfile();
+
+  }
 }

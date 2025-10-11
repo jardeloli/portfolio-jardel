@@ -205,7 +205,7 @@
     border-radius: 45px;
     color: #fff;
     height: 30px;
-    background: #181616;
+    background: var(--color-blue-5);
     margin-right: 15px;
     padding: 0 12px;
     font-size: var(--font-size-5);
@@ -214,8 +214,15 @@
     text-decoration: none;
 }
 
+.projects .box .project .text .buttons a:hover {
+    background: var(--color-blue-1);
+}
+
 .projects .box .project .text .buttons a.live {
     background: var(--color-pink-1);
+}
+.projects .box .project .text .buttons a.live:hover {
+    background: #f42771bf;
 }
 
 .projects .box .project .text .buttons a svg {
