@@ -1,5 +1,4 @@
-
-.banner{
+.banner {
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, var(--color-blue-2) 15%, var(--color-blue-3) 100%);
@@ -8,7 +7,7 @@
     text-align: center;
 }
 
-.banner .box{
+.banner .box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,11 +21,11 @@
     color: #fff;
 }
 
-.banner .box .title{
+.banner .box .title {
     font-size: var(--font-size-2);
 }
 
-.banner .box .title2{
+.banner .box .title2 {
     font-size: var(--font-size-1);
     display: block;
     max-width: 575px;
@@ -57,45 +56,45 @@
     text-decoration: none;
 }
 
-.banner .box .buttons a:hover{
+.banner .box .buttons a:hover {
     background: var(--color-blue-5);
 }
 
-.banner .box .buttons i{
+.banner .box .buttons i {
     margin-right: 5px;
 }
 
 /*box about*/
 
-.about .box{
+.about .box {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
 }
 
-.about  .img {
+.about .img {
     flex: 1;
     margin: 10px auto 20px;
-    
+
 }
 
-.about .box .img img{
+.about .box .img img {
     width: 200px;
     border-radius: 8%;
-   
+
 }
 
-.about .text{
+.about .text {
     flex: 2
 }
 
-.about h2{
+.about h2 {
     padding: 0 15px;
 }
 
-.about h3{
+.about h3 {
     color: var(--color-blue-2);
-    margin-top: 15px; 
+    margin-top: 15px;
     padding: 0 15px;
 }
 
@@ -116,7 +115,7 @@
 }
 
 .skills .box h2,
-.skills .box h3{
+.skills .box h3 {
     padding: 0 15px;
 }
 
@@ -125,14 +124,14 @@
     font-size: var(--font-size-4);
 }
 
-.skills .box  .items{
+.skills .box .items {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 900px;
 }
 
-.skills .box .items .skill{
+.skills .box .items .skill {
     width: 50%;
     padding: 30px;
     display: flex;
@@ -141,18 +140,18 @@
     text-align: center;
 }
 
-.skills .box .items .skill:hover{
+.skills .box .items .skill:hover {
     background: #ffffff1f;
 }
 
 .skills .box .items .skill img,
-.skills .box .items .skill svg{
+.skills .box .items .skill svg {
     width: 90px;
-    
+
 }
 
-.skills .box .items .skill h4{
-    margin-top: 15px ;
+.skills .box .items .skill h4 {
+    margin-top: 15px;
 }
 
 .projects .box h3 {
@@ -161,7 +160,7 @@
     font-size: var(--font-size-4);
 }
 
-.projects .box h2{
+.projects .box h2 {
     padding: 0 15px;
 }
 
@@ -169,19 +168,19 @@
     display: flex;
     flex-direction: column;
     margin: 50px;
-  ;
+    ;
 }
 
-.projects .box .project.reverse{
+.projects .box .project.reverse {
     flex-direction: column-reverse;
 }
 
-.projects .box .project .img{
-    flex:1;
+.projects .box .project .img {
+    flex: 1;
     margin-bottom: 15px;
 }
 
-.projects .box .project .text{
+.projects .box .project .text {
     flex: 1;
     margin-bottom: 15px;
 }
@@ -191,20 +190,20 @@
 }
 
 .projects h4 {
-    font-size:  var(--font-size-3);
+    font-size: var(--font-size-3);
     margin-bottom: 15px;
 }
 
-.projects .box .project .text .buttons{
+.projects .box .project .text .buttons {
     margin-top: 20px;
     display: flex;
     align-items: center;
 }
 
-.projects .box .project .text .buttons a{
+.projects .box .project .text .buttons a {
     display: inline-flex;
     border-radius: 45px;
-    color:#fff;
+    color: #fff;
     height: 30px;
     background: #181616;
     margin-right: 15px;
@@ -215,52 +214,121 @@
     text-decoration: none;
 }
 
-.projects .box .project .text .buttons a.live{
+.projects .box .project .text .buttons a.live {
     background: var(--color-pink-1);
 }
 
-.projects .box .project .text .buttons a svg{
+.projects .box .project .text .buttons a svg {
     width: 25px;
     margin-right: 5px;
 }
 
-.projects .box .project .text .buttons a i{
+.projects .box .project .text .buttons a i {
     margin-right: 5px;
 }
 
-@media (min-width: 768px){
-    .about .box{
+.contact {
+    background: var(--color-black-1);
+}
+
+.contact .box {
+    max-width: 880px;
+}
+
+.contact .box h2 {
+    color: #fff;
+}
+
+.contact .box .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px 0;
+}
+
+.contact .box .contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: var(--color-pink-1);
+    height: 50px;
+    color: #fff;
+    border-radius: 35px;
+    min-width: 200px;
+    font-weight: 700;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.contact .box .contacts a:hover {
+    background: #f42771bf;
+}
+
+.contact .box .contacts a i {
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.contact .box .contacts a svg {
+    width: 30px;
+    margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+    .about .box {
         flex-direction: row;
+        padding: 120px;
+    }
+
+    .about .box .img img {
+        width: 100%;
+
+    }
+
+    .about .img {
+        margin: 10px 15px 20px;
+
+    }
+
+    .skills .box {
         padding: 80px;
     }
 
-    .about .box .img img{
-        width: 100%;
-        
-    }
-
-    .about  .img {
-        margin: 10px 15px 20px;
-    
-    }
-
     .skills .box h2,
-    .skills .box h3{
+    .skills .box h3 {
         padding: 0 15px;
     }
 
-    .skills .box .items .skill{
+    .skills .box .items .skill {
         width: 25%;
-        
+
     }
 
-    .skills .box .items .skill img, 
-    .skills .box .items .skill img{
+    .skills .box .items .skill img,
+    .skills .box .items .skill img {
         width: 120px;
     }
 
+    .projects .box {
+        padding: 80px;
+    }
+
     .projects .box .project,
-    .projects .box .project.reverse{
+    .projects .box .project.reverse {
         flex-direction: row;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .contact .box {
+        padding: 80px;
+    }
+
+    .contact .box .contacts {
+        flex-direction: row;
+        
     }
 }

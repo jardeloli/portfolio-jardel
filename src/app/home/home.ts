@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProfileServise } from '../services/profile';
+import { Profile, ProfileServise } from '../services/profile';
 
 @Component({
   selector: 'app-home',
@@ -10,5 +10,12 @@ import { ProfileServise } from '../services/profile';
 export class HomeComponent {
 
   constructor(private profileService: ProfileServise){}
+
+  profile?: Profile;
+
+  ngOnInit(){
+    this.profile = this.profileService.getProfile();
+
+  }
 
 }
