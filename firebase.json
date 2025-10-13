@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/portfolio-jardel/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
